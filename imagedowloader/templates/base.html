@@ -1,0 +1,7 @@
+{% if user.is_authenticated %}
+<a href="{% url 'imagedowloader:getimage' %}">Загрузить картинку</a>
+<a href="{% url 'imagedowloader:log' %}">Выйти</a>
+{% else %}
+     <a href="{% url 'imagedowloader:login' %}">Войти</a>    {% endif %}
+{% block content %}
+{% endblock content %}
