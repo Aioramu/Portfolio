@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'gallery.apps.GalleryConfig',
     'imagedowloader.apps.ImagedowloaderConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -125,5 +126,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_URL = '/imagedowloader/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'gallery/static/media/')
